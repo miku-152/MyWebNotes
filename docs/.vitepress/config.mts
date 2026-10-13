@@ -14,8 +14,22 @@ export default defineConfig({
         items: [
           { 
             text: 'Godot项目总结', 
-            // 因为文件名是 index.md，这里写文件夹路径即可
             link: '/项目总结/godot项目总结/' 
+          },
+          {
+            text: 'UE项目总结',
+            items: [
+              { 
+                text: '跑酷游戏总结', 
+                // 因为文件名为 index.md，所以路径写到文件夹为止
+                link: '/项目总结/UE项目总结/' 
+              },
+              { 
+                text: 'FPS人物部分项目总结', 
+                // 注意：这里的路径是不带 .md 后缀的，要跟你的文件名完全对应
+                link: '/项目总结/UE项目总结/FPS人物部分项目总结' 
+              }
+            ]
           }
         ]
       }
