@@ -7,8 +7,9 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '项目总结', link: '/项目总结/godot项目总结/' },
-      // 可以在顶部导航再加一个，方便快速跳转
-      { text: '编程基础', link: '/编程基础/设计模式/' } 
+      { text: '编程基础', link: '/编程基础/设计模式/' },
+      // 新增游戏开发秘籍的顶部导航
+      { text: '游戏开发秘籍', link: '/游戏开发秘籍/' }
     ],
     sidebar: [
       {
@@ -20,7 +21,6 @@ export default defineConfig({
           },
           {
             text: 'UE项目总结',
-            // 补上这一行，解决你之前点不了的问题
             link: '/项目总结/UE项目总结/',
             items: [
               { 
@@ -35,7 +35,6 @@ export default defineConfig({
           }
         ]
       },
-      // 👇 新增分类
       {
         text: '编程基础',
         items: [
@@ -56,6 +55,17 @@ export default defineConfig({
                 link: '/编程基础/设计模式/结构型模式' 
               }
             ]
+          }
+        ]
+      },
+      // 新增游戏开发秘籍的侧边栏
+      {
+        text: '游戏开发秘籍',
+        link: '/游戏开发秘籍/',
+        items: [
+          { 
+            text: '配置文件', 
+            link: '/游戏开发秘籍/配置文件' 
           }
         ]
       }
